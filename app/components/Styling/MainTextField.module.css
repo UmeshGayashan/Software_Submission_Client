@@ -1,0 +1,14 @@
+.input {
+  padding: auto;
+  font-size: 1rem;
+}
+
+.inputPassword{
+  background-color:cadetblue;
+  border-color:cadetblue;
+}
+
+.inputText{
+  background-color:lightblue;
+  border-color:lightblue;
+}

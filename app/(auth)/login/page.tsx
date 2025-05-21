@@ -2,6 +2,8 @@
 import MainButton from '@/app/components/mainButton'
 import React from 'react'
 import styles from './page.module.css';
+import MainTextField from '@/app/components/MainTextField';
+import Card from '@/app/components/Card';
 
 function Home() {
     const Name = "Login1"
@@ -11,7 +13,18 @@ function Home() {
     }
   return (
     <div>
-        <MainButton onClickFunc={handleClick} Name={Name}/>
+        <Card
+            heading="Login"
+            content="Please enter your credentials"
+            // width={400}
+            // height={300}
+            // backgroundColor="white"
+            // borderRadius={10}
+            // fields={[
+            //     { title: "UserName", isPassword: false },
+            //     { title: "Password", isPassword: true }
+            // ]}
+        />
     </div>
   )
 }
