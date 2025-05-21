@@ -29,7 +29,7 @@ function Card({heading, content, width, height, backgroundColor, borderRadius, f
             ))}
             <MainTextField title="UserName" isPassword={false} />
             <MainTextField title="Password" isPassword={true} />
-            <MainButton Name="Login" onClickFunc={handleClick} />
+            <MainButton Name="Login" onClickFunc={handleClick} className='h-12 w-full'/>
     </form>
   )
 }

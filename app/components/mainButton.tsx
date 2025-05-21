@@ -5,11 +5,12 @@ import styles from '../components/Styling/MainButton.module.css';
 type Props = {
     Name: string
     onClickFunc?: () => void
+    className?: string
 }
 
-function MainButton({ Name,onClickFunc = ()=>{} }: Props) {
+function MainButton({ Name,onClickFunc = ()=>{}, className }: Props) {
   return (
-    <button className={`${styles.button} bg-black hover:bg-blue-700`} onClick={onClickFunc}>{Name}</button>
+    <button className={`${styles.button} bg-black hover:bg-blue-700 ${className}`} onClick={onClickFunc}>{Name}</button>
   )
 }
 
