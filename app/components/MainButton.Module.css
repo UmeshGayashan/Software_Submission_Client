@@ -1,0 +1,13 @@
+/* MainButton.module.css */
+.button {
+  background-color: #0080ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  /* cursor: pointer; */
+  /* transition: background 0.2s; */
+}
+
+.button:hover {
+  background-color: #0059c1;
+}

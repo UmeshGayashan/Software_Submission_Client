@@ -1,6 +1,7 @@
 "use client";
 import MainButton from '@/app/components/mainButton'
 import React from 'react'
+import styles from './page.module.css';
 
 function Home() {
     const Name = "Login1"

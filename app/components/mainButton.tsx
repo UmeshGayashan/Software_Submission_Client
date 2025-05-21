@@ -1,5 +1,6 @@
 "use client"; // to convert to client component
 import React from 'react'
+import styles from './MainButton.module.css';
 
 type Props = {
     Name: string
@@ -8,7 +9,7 @@ type Props = {
 
 function MainButton({ Name,onClickFunc = ()=>{} }: Props) {
   return (
-    <button onClick={onClickFunc}>{Name}</button>
+    <button className={styles.button} onClick={onClickFunc}>{Name}</button>
   )
 }
 
