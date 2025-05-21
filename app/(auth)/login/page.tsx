@@ -12,7 +12,9 @@ function Home() {
         console.log("Button clicked");
     }
   return (
-    <div>
+    <div className='bg-gray-200 h-screen flex items-center justify-between'>
+      {/* <MainTextField title="UserName" isPassword={false} /> */}
+        <MainTextField title="Password" isPassword={true} />
         <Card
             heading="Login"
             content="Please enter your credentials"

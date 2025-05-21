@@ -1,6 +1,6 @@
 "use client"; // to convert to client component
 import React from 'react'
-import styles from './MainButton.module.css';
+import styles from '../components/Styling/MainButton.module.css';
 
 type Props = {
     Name: string
@@ -9,15 +9,7 @@ type Props = {
 
 function MainButton({ Name,onClickFunc = ()=>{} }: Props) {
   return (
-    <button className="
-        bg-blue-500
-        hover:bg-blue-700
-        text-white
-        font-bold
-        py-2
-        px-4
-        rounded-
-      " onClick={onClickFunc}>{Name}</button>
+    <button className={`${styles.button} bg-black hover:bg-blue-700`} onClick={onClickFunc}>{Name}</button>
   )
 }
 
