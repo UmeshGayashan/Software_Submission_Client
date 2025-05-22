@@ -18,7 +18,7 @@ function Home() {
     <div className='bg-gray-200 max-h-screen flex items-center justify-between'
     >
       {/* <MainTextField title="UserName" isPassword={false} /> */}
-        <MainTextField title="Password" isPassword={true} className='hidden md:block m-20' />
+      <img src="/Software_Assignment_Submission.png" alt="Description" className='hidden md:block m-20 w-100 rounded-4xl'/>
         <Card
             heading="Login"
             content="Please enter your credentials"

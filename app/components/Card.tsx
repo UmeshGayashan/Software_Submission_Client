@@ -47,7 +47,7 @@ function Card({
       <MainTextField title="Password" isPassword={true} />
       <a href={otherUrl} className="flex p-1 relative group">
         {other}
-        <span className="opacity-0 group-hover:opacity-100">
+        <span className="opacity-0 group-hover:opacity-100 absolute left-1/2 -top-8 -translate-x-1/2 px-2 py-1 rounded bg-black text-white text-xs">
             Contact Advisor
         </span>
         </a>
