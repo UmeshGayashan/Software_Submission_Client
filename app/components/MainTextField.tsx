@@ -5,18 +5,19 @@ import styles from '../components/Styling/MainTextField.module.css';
 type Props = {
     isPassword?: boolean
     title?: string
+    className?: string
 }
 
-function MainTextField({isPassword,title}:Props) {
+function MainTextField({isPassword,title,className}:Props) {
   {
     return(
-        <div>
+        <div className={`${className}`}>
             <div>
                 {title}
             </div>
             <input
                 type={isPassword ? "password" : "text"}
-                className={isPassword ? styles.inputPassword : styles.inputText}
+                className={`${isPassword ? styles.inputPassword : styles.inputText} `}
                 placeholder={title}>
             </input>
         </div>

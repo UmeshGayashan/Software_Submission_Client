@@ -14,7 +14,7 @@ function Home() {
   return (
     <div className='bg-gray-200 h-screen flex items-center justify-between'>
       {/* <MainTextField title="UserName" isPassword={false} /> */}
-        <MainTextField title="Password" isPassword={true} />
+        <MainTextField title="Password" isPassword={true} className='hidden md:block m-20' />
         <Card
             heading="Login"
             content="Please enter your credentials"
