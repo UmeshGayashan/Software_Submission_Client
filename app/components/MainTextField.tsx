@@ -12,12 +12,12 @@ function MainTextField({isPassword,title,className}:Props) {
   {
     return(
         <div className={`${className}`}>
-            <div>
+            <div className='py-2'>
                 {title}
             </div>
             <input
                 type={isPassword ? "password" : "text"}
-                className={`${isPassword ? styles.inputPassword : styles.inputText} `}
+                className={`${isPassword ? styles.inputPassword : styles.inputText} p-2`}
                 placeholder={title}>
             </input>
         </div>
