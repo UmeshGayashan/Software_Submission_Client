@@ -45,7 +45,12 @@ function Card({
       ))}
       <MainTextField title="UserName" isPassword={false} />
       <MainTextField title="Password" isPassword={true} />
-      <a href={otherUrl} className="flex p-1">{other}</a>
+      <a href={otherUrl} className="flex p-1 relative group">
+        {other}
+        <span className="opacity-0 group-hover:opacity-100">
+            Contact Advisor
+        </span>
+        </a>
       <MainButton
         Name="Login"
         onClickFunc={handleClick}
