@@ -25,10 +25,11 @@ type Props = {
 
 function CodeEditor(props: Props) {
   return (
-    <div className='border-2 justify-center items-center bg-amber-200 rounded-2xl p-5 m-5'>
+    <div className='border-5 justify-center items-center rounded-2xl p-5 m-5 '>
         <Editor
             height={props.height || "70vh"}
-            defaultLanguage={props.defaultLanguage || "C"}
+            width={props.width || "80vh"}
+            defaultLanguage={props.defaultLanguage || "c"}
             defaultValue={props.defaultValue || "// some comment"}
         />
         <MainButton Name='Run Code' />
