@@ -25,12 +25,12 @@ type Props = {
 
 function CodeEditor(props: Props) {
   return (
-    <div className='border-5 justify-center items-center rounded-2xl p-5 m-5 '>
-        <Editor
+    <div className='border-2 rounded-2xl px-5 pt-5 pb-2 m-5'>
+        <Editor className='pb-5 flex flex-col'
             height={props.height || "70vh"}
             width={props.width || "80vh"}
             defaultLanguage={props.defaultLanguage || "c"}
-            defaultValue={props.defaultValue || "// some comment"}
+            defaultValue={props.defaultValue || "#include <stdio.h>\nint main() {\n\tprintf(\"Hello World\");\n\treturn 0;\n}"}
         />
         <MainButton Name='Run Code' />
     </div>
