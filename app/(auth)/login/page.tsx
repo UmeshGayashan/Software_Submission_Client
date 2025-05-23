@@ -1,8 +1,5 @@
 "use client";
-import MainButton from '@/app/components/mainButton'
 import React from 'react'
-import styles from './page.module.css';
-import MainTextField from '@/app/components/MainTextField';
 import Card from '@/app/components/Card';
 import { usePathname } from 'next/navigation';
 
